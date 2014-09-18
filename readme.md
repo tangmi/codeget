@@ -6,6 +6,10 @@ cli tool to keep your source code organized for you! lol!
 
 ### `code get <repo url || username/repo>`
 
+does a git clone into a directory set by `configure.js` and the url itself: by default it clones to `~/code/<repo hostname>/<username>/<reponame>`, which is kind of how golang does it and is pretty organized i think.
+
+notes:
+
 * `git clone`'s a repo at `username/repo`
 * saves it to `${code dir}/<domain>/<username>/<repo>`
 * calls `code go username/repo`
