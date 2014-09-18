@@ -16,6 +16,9 @@ example:
 
 ```sh
 code get git@github.com:tangmi/codeget.git
+
+# clones to:
+#   ~/code/github.com/tangmi/codeget
 ```
 
 notes:
