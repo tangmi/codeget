@@ -8,6 +8,12 @@ cli tool to keep your source code organized for you! lol!
 
 does a git clone into a directory set by `configure.js` and the url itself: by default it clones to `~/code/<repo hostname>/<username>/<reponame>`, which is kind of how golang does it and is pretty organized i think.
 
+example:
+
+```sh
+code get git@github.com:tangmi/codeget.git
+```
+
 notes:
 
 * `git clone`'s a repo at `username/repo`
