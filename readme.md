@@ -2,6 +2,10 @@
 
 cli tool to keep your source code organized for you! lol!
 
+```sh
+npm install -g tangmi/codeget
+```
+
 ## actions
 
 ### `code get <repo url || username/repo>`
