@@ -4,7 +4,7 @@ cli tool to keep your source code organized for you! lol!
 
 ## actions
 
-### `code get <username/repo>`
+### `code get <repo url || username/repo>`
 
 * `git clone`'s a repo at `username/repo`
 * saves it to `${code dir}/<domain>/<username>/<repo>`
@@ -14,7 +14,7 @@ cli tool to keep your source code organized for you! lol!
 
 * reports a message if repo's remote doesn't match its path
 
-### `code go <username/repo>`
+### `code go <repo url || username/repo>`
 
 * changes directory to `${code dir}/<domain>/<username>/<repo>`
 
