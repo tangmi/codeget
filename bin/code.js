@@ -35,10 +35,14 @@ if (arg) {
 			break;
 		case 'go':
 			var repo = helper.getRepo(arg);
-			require('../lib/go')(repo, function() {});
+			require('../lib/go')(repo, function() {
+				// TODO: print output for code go
+			});
 			break;
 		case 'make':
-			require('../lib/make')(reponame, function() {});
+			require('../lib/make')(reponame, function() {
+				// TODO: print output for code make
+			});
 			break;
 		default:
 			printHelp();
@@ -49,5 +53,6 @@ if (arg) {
 }
 
 function printHelp() {
+	// TODO: write helpful help message
 	console.log('help msg here lol');
 }
