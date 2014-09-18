@@ -32,3 +32,4 @@ cli tool to keep your source code organized for you! lol!
 ## todo
 
 * allow setting of CODE_DIR
+* fix error message when git can't find the repo
