@@ -28,3 +28,7 @@ cli tool to keep your source code organized for you! lol!
 ## notes
 
 * `code get/go` assumes `https://github.com` if a short `username/repo` form is used (can be overriden with a full domain name)
+
+## todo
+
+* allow setting of CODE_DIR

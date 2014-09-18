@@ -43,7 +43,7 @@ if (arg) {
 			var repo = helper.getRepo(arg);
 			require('../lib/go')(repo, function(err) {
 				console.log();
-				
+
 				if (err) {
 					console.log('fatal: ' + err.message);
 					return;
@@ -52,21 +52,21 @@ if (arg) {
 				var repoDir = helper.getFilePathFromRepo(repo);
 				console.log('info: ' + 'changed directory');
 				console.log('  => ' + repoDir)
-
-
-
-				// TODO: print output for code go
 			});
 			break;
 		case 'make':
-			console.log();
+			var reponame = arg;
 			require('../lib/make')(reponame, function(err) {
+				console.log();
 				if (err) {
 					console.log('fatal: ' + err.message);
 					return;
 				}
 
-				// TODO: print output for code make
+				var repoDir = path.join(configure.CODE_DIR, 'localhost', reponame);
+
+				console.log('info: ' + 'make directory');
+				console.log('  => ' + repoDir)
 			});
 			break;
 		default:
