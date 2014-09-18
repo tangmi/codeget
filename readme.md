@@ -18,7 +18,7 @@ example:
 # use it in the place of `git clone` :) ! (oh shiiit :O !! )
 code get git@github.com:tangmi/codeget.git
 
-# clones to:
+# always clones to:
 #   ~/code/github.com/tangmi/codeget
 ```
 
