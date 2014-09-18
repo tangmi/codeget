@@ -15,6 +15,7 @@ does a git clone into a directory set by `configure.js` and the url itself: by d
 example:
 
 ```sh
+# use it in the place of `git clone`! (oh shiiit!!)
 code get git@github.com:tangmi/codeget.git
 
 # clones to:
