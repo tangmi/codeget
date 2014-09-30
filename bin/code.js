@@ -40,18 +40,38 @@ if (arg) {
 			});
 			break;
 		case 'go':
-			var repo = helper.getRepo(arg);
-			require('../lib/go')(repo, function(err) {
-				console.log();
+			// var repo = helper.getRepo(arg);
+			require('../lib/go')(arg, function(err, repos) {
+				// console.log();
 
 				if (err) {
 					console.log('fatal: ' + err.message);
+					process.exit(1);
 					return;
 				}
 
-				var repoDir = helper.getFilePathFromRepo(repo);
-				console.log('info: ' + 'changed directory');
-				console.log('  => ' + repoDir)
+				var MAX_REPO_DISPLAY = 10;
+				if(repos.length > 1) {
+					console.log('multiple repos found!');
+					repos.forEach(function(repo, i) {
+						if(i + 1> MAX_REPO_DISPLAY) {
+							return;
+						}
+						console.log('%s (score=%s)', repo.path, repo.score);
+					});
+					if(repos.length > MAX_REPO_DISPLAY) {
+						console.log('(%s more)', repos.length - MAX_REPO_DISPLAY);
+					}
+					process.exit(1);
+					return;
+				} else {
+					console.log(repos[0].path);
+					process.exit(0);
+				}
+
+				// var repoDir = helper.getFilePathFromRepo(repo);
+				// console.log('info: ' + 'changed directory');
+				// console.log('  => ' + repoDir)
 			});
 			break;
 		case 'make':
