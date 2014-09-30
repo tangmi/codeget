@@ -106,7 +106,7 @@ function printHelp() {
 	console.log();
 	console.log('Commands:');
 	// TODO: write helpful help message
-	console.log('    get   ' + '');
-	console.log('    go    ' + '');
-	console.log('    make  ' + '');
+	console.log('    get   ' + 'retreives a repo from a url to an organized place');
+	console.log('    go    ' + 'finds a repo on disk with fuzzy matching');
+	console.log('    make  ' + 'makes a local folder on with some name');
 }
