@@ -39,7 +39,7 @@ notes:
       * one can then cd into the directory by typing ``cd `!!` ``
    * if there is more than one result, print them out
 
-#### plans for features:
+plans for features:
 
 > * changes directory to `${code dir}/<domain>/<username>/<repo>` for you
 
@@ -48,9 +48,9 @@ notes:
 * creates an empty directory at `${code dir}/localhost/<repo name>` (repo is not created for you)
     * the idea is that the `${code dir}/localhost` dir can purged if a dev is diligent about pushing everything and work and be `code get`'ed and worked on in the non-localhost dir
 
-#### plans for features:
+plans for features:
 
-* have a `code organize` or similar that looks through the `origin` remote and organizes code for you
+> * have a `code organize` or similar that looks through the `origin` remote and organizes code for you
 
 ## notes
 
