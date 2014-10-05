@@ -32,20 +32,29 @@ notes:
 
 * reports a message if repo's remote doesn't match its path
 
-### `code go <repo url || username/repo>`
+### `code go <search query>`
 
-* changes directory to `${code dir}/<domain>/<username>/<repo>`
+* uses fuzzy matching to find the repo matching the search query
+   * if there is only one result, prints it out
+      * one can then cd into the directory by typing ``cd `!!` ``
+   * if there is more than one result, print them out
 
-* reports a message if repo's remote doesn't match its path
+#### plans for features:
+
+> * changes directory to `${code dir}/<domain>/<username>/<repo>` for you
 
 ### `code make <repo name>`
 
-* creates an empty directory and repo (`git init`) at `${code dir}/localhost/<repo name>` with no remote
+* creates an empty directory at `${code dir}/localhost/<repo name>` (repo is not created for you)
     * the idea is that the `${code dir}/localhost` dir can purged if a dev is diligent about pushing everything and work and be `code get`'ed and worked on in the non-localhost dir
+
+#### plans for features:
+
+* have a `code organize` or similar that looks through the `origin` remote and organizes code for you
 
 ## notes
 
-* `code get/go` assumes `https://github.com` if a short `username/repo` form is used (can be overriden with a full domain name)
+* `code get` assumes `https://github.com` if a short `username/repo` form is used (can be overriden with a full domain name)
 
 ## todo
 
