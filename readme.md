@@ -36,7 +36,7 @@ notes:
 
 * uses fuzzy matching to find the repo matching the search query
    * if there is only one result, prints it out
-      * one can then cd into the directory by typing ``cd `!!` ``
+      * one can then cd into the directory by typing ``cd `!!` `` or ``cd `code go <search query>` `` (or similar)
    * if there is more than one result, print them out
 
 plans for features:
